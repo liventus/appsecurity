@@ -51,12 +51,12 @@ public class SecurityConfig {
         return new InMemoryUserDetailsManager(admin, user);
     }*/
 
-    @Bean
+    /*@Bean
     UserDetailsService userDetailsService(DataSource dataSource) {
         return new JdbcUserDetailsManager(dataSource);
     }
-
-    @Bean
+*/
+  @Bean
     PasswordEncoder passwordEncoder(){
         return NoOpPasswordEncoder.getInstance();
     }
